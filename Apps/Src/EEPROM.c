@@ -1,3 +1,9 @@
+/**
+ * 这里是EEPROM的驱动程序
+ * 主要功能：控制EEPROM存储，读取数据
+ * 
+ * 注意，EEPROM并未设计有关功能，仅有驱动程序
+*/
 #include "EEPROM.h"
 #include "SysConfig.h"
 #include "i2c.h"

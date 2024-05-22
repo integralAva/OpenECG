@@ -1,5 +1,9 @@
+/**
+ * "DataCenter.c"
+ * 主要负责数据的处理
+ * 功能：计算，处理数据
+*/
 #include "DataCenter.h"
-
 #include "ADAS1000.h"
 #include "EEPROM.h"
 #include "bsp_uart.h"
@@ -46,6 +50,13 @@ void DataCenter_Run(void)
     
 }
 
+
+/**
+ * 下面这一部分可视为独立的一部分
+ * 由于算法简陋没有单独开一个文件，塞在这里了
+ * 
+ * 主要功能：计算HR和RR
+*/
 
 static uint32_t BMP_Time = 0;
 static uint32_t RR_Time = 0;
@@ -96,6 +107,12 @@ void ECG_CalcBMP_function(ECG_BMP_CH ch)
             break;
     }
 }
+
+
+/**
+ * 为了简单直接做三个导联的计算函数
+ * 摸鱼行为请勿模仿
+*/
 
 static void ECG_CalcBMP_I(void)
 {

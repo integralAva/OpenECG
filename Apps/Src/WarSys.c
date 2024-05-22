@@ -1,3 +1,7 @@
+/**
+ * 报警模板
+ * 纯纯的过程描述~
+*/
 #include "WarSys.h"
 #include "bsp_beep.h"
 #include "bsp_led.h"

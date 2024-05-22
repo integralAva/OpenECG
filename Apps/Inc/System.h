@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-
+//没有什么实际作用的枚举
 typedef enum
 {
     ERR_InitFault,

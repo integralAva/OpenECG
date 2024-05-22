@@ -1,3 +1,8 @@
+/**
+ * 中断管理
+ * 并没有调度中断的能力
+ * 这个文件只是为了方便管理各种回调函数而设
+*/
 #include "InterruptCenter.h"
 
 #include "tim.h"

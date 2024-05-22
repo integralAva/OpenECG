@@ -416,7 +416,6 @@ extern "C" void GUI_Draw_BigNum(uint16_t x,uint16_t y,short num,uint32_t color,u
 
 extern "C" void GUI_Show_SysValue(void)
 {
-    //c_word::draw_value(s_surface,Z_ORDER_LEVEL_0,battery,0,260,0,c_theme::get_font(FONT_DEFAULT),GL_RGB(255,255,255),GL_ARGB(0,0,0,0));
     char str[50];
     sprintf(str,"Bat:%d%%(%.2fv)  CoreTemp:%.2fC  CPU:%d%%",SystemState.PWR_BAT,
                                                             SystemState.battery_vot,
